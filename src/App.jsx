@@ -1,11 +1,10 @@
+import AppRouter from "./components/AppRouter.jsx";
+
 import './App.css'
 
 function App() {
-
   return (
-    <>
-      Initialized and cleaned
-    </>
+    <AppRouter />
   )
 }
 
