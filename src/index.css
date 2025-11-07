@@ -1,1 +1,17 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+.score-badge .see-score {
+  display: none;
+}
+
+.score-badge:hover .see-score {
+  display: block;
+}
+
+.score-badge:hover {
+  cursor: pointer;
+}
+
+.score-badge:hover .score {
+  display: none;
+}
