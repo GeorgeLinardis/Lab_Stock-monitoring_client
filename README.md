@@ -1,16 +1,22 @@
-# React + Vite
+# Stock Monitoring Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status: Frozen](https://img.shields.io/badge/status-frozen-blue)
 
-Currently, two official plugins are available:
+Project status: frozen due to high pricing in Europe stock APIs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend for the Stock Monitoring app. It pairs with the Cloudflare Worker backend at https://github.com/GeorgeLinardis/Stock-monitoring_wrangler-worker for market data and scoring.
 
-## React Compiler
+![Stocks app preview](public/app-preview.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What it does
+- Dashboard header showing portfolio totals, capital, and daily change metrics.
+- Stocks table for US market listings with price, 52-week range, volume, last update, and score badge.
+- Watchlist/portfolio action buttons per stock (watch/unwatch, add/remove).
+- Stock score route for detailed scoring pages (`/stock-score/:symbol`).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+- React + Vite
+- React Router for client-side routing
+- Bootstrap 5 for layout and styling
+- React Icons for UI glyphs
+- Decimal.js for precise numeric math
