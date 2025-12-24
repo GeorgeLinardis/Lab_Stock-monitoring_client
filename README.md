@@ -4,7 +4,7 @@
 
 Project status: frozen due to high pricing in Europe stock APIs.
 
-Frontend for the Stock Monitoring app. It pairs with the Cloudflare Worker backend at https://github.com/GeorgeLinardis/Lab_Stock-monitoring_wrangler-worker for market data and scoring.
+Frontend for the Stock Monitoring app. It pairs with the Cloudflare Worker backend at https://github.com/GeorgeLinardis/Lab_Stock-monitoring_wrangler for market data and scoring.
 
 ![Stocks app preview](public/app-preview.png)
 
